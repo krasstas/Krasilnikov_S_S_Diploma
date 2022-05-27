@@ -69,7 +69,7 @@ function fonts() {
 function watchFiles() {
   watch(`${srcDir}/js/**/*.js`, scripts);
   watch(`${srcDir}**/*.html`, html);
-  watch(`${srcDir}/sass/*.scss`, styles);
+  watch(`${srcDir}/sass/**/*.scss`, styles);
   watch(`${srcDir}/img/**/*`, images);
 }
 
