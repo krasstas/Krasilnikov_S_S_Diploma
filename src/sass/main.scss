@@ -1,32 +1,4 @@
-.hello-word {
-  font-size: 68px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  background-clip: text;
-  color: transparent;
-}
-
-.wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
 
 
-  & img {
-    display: block;
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
 
-    animation: fade-in 2s;
 
-  }
-}
-
-@keyframes fade-in {
-  from {
-    transform: translateX(-300%);
-  }
-
-  to {
-    transform: translateX(0)
-  }
-}
