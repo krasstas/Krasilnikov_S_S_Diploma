@@ -5,6 +5,7 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'components/buttons';
+@import 'pages/team.scss';
 
 html {
     font-size: 20px;
@@ -31,17 +32,6 @@ img {
     height: auto;
   }
 
-// .site__wrapper {
-//     min-height: 100%;
-//     overflow: hidden;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .main_content {
-//     flex: 1 1 auto;
-// }
-
 .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -51,4 +41,6 @@ img {
     margin: 0;
     padding: 0;
 }
+
+
 
