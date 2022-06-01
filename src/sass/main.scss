@@ -1,5 +1,5 @@
 
-@import 'base/normalize';
+@import '../normalize/';
 @import 'base/fonts';
 @import 'utilities/variables';
 @import 'layout/header';
@@ -31,19 +31,19 @@ img {
     height: auto;
   }
 
-.site__wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
+// .site__wrapper {
+//     min-height: 100%;
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.main_content {
-    flex: 1 1 auto;
-}
+// .main_content {
+//     flex: 1 1 auto;
+// }
 
 .container {
-    max-width: 1290px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
