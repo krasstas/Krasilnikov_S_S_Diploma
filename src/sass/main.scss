@@ -1,14 +1,14 @@
 
+@import 'utilities/variables';
 @import 'base/normalize';
 @import 'base/fonts';
-@import 'utilities/variables';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'components/buttons';
-@import 'pages/team.scss';
+@import 'pages/team';
 
 html {
-    font-size: 20px;
+    font-size: 16px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 

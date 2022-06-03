@@ -1,10 +1,19 @@
-
+@import '../main.scss';
 
 .team__container {
-    background-color: rgb(218, 145, 50);
-    
+    background-color:bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: left;
 }
 
 .team__title {
-    font-size: 32px;
+    display: inline-block;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    line-height: 5rem;
+    margin-bottom: 90px;
 }
