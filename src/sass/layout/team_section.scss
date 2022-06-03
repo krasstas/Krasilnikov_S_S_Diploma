@@ -1,12 +1,22 @@
-@import '../main.scss';
+@import '../utilities/variables';
+@import '../base/normalize.scss';
+@import '../base/fonts.scss';
+@import '../layout/header';
+@import '../layout/footer';
+@import '../components/buttons';
+
+
+.team {
+    max-width: 1920px;
+    background-color:rgb(173, 24, 124);
+}
 
 .team__container {
-    background-color:bisque;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 60px;
     text-align: left;
 }
 
@@ -14,6 +24,6 @@
     display: inline-block;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.875rem;
-    line-height: 5rem;
+    line-height: 2.3rem;
     margin-bottom: 90px;
 }
