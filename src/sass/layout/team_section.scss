@@ -6,8 +6,44 @@
 @import "../components/buttons";
 
 
+html {
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+
 .team {
-    background-color: rgb(228, 221, 202);
+    background-color: rgb(238, 217, 158);
   }
 
 .team__wrapper {
@@ -22,26 +58,28 @@
   align-items: center;
   flex: 1 1 auto;
   padding: 30px;
+}
 
-
-.title {
-    margin: 0;
-    padding: 0;
-  }  
-
-&__title {
+.team__title {
   display: inline-block;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   line-height: 2.3rem;
-  margin-bottom: 0 0 30px 0;
+  margin-bottom: 30px;
   background-clip: text;
   background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-&__employees {
-  display: flex;
+.team__employees {
+  flex: 1 1 auto;
 }
+.team__employee {
+}
+.team__employee__photo {
+}
+.team__employee__description {
+}
+.team__employee__position {
 }
