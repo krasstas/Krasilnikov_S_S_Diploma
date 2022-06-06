@@ -6,9 +6,14 @@
 @import '../components/buttons';
 
 
+.title {
+    margin: 0;
+    padding: 0;
+}
+
 .team {
     max-width: 1920px;
-    background-color:rgb(173, 24, 124);
+    background-color:rgb(228, 221, 202);
 }
 
 .team__container {
@@ -16,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 30px;
     text-align: left;
 }
 
@@ -25,5 +30,9 @@
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 1.875rem;
     line-height: 2.3rem;
-    margin-bottom: 90px;
-}
+    margin-bottom: 30px;
+    background-clip: text;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
