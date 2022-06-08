@@ -43,7 +43,7 @@ img {
 
 
 .team {
-    background-color: rgb(238, 217, 158);
+    background-color: white;
   }
 
 .team__wrapper {
@@ -75,11 +75,47 @@ img {
 .team__employees {
   flex: 1 1 auto;
 }
-.team__employee {
-}
+
 .team__employee__photo {
+  max-width: 315px;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
 }
+
 .team__employee__description {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  padding: 15px 0 30px 0;
 }
+
+.team__employee__page_link {
+  color: $color-main;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+
+  &::after {
+    content: url(../../img/icons/team_icons/team_more.svg);
+    vertical-align: top;
+    float: right;
+  }
+
+  &__-clear::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+p {
+  margin: 5px 0 0 0;
+}
+
 .team__employee__position {
+  color: $color-grey-text;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.1rem;
 }
