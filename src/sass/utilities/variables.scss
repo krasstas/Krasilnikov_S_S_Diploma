@@ -18,3 +18,9 @@ $color-gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, 
 $color-gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
 $color-gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 $color-gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+
+$tablet_sd: 'min-width: 768px';
+$tablet_hd: 'min-width: 1024px';
+$desktop_sd: 'min-width: 1440px';
+$desktop_hd: 'min-width: 1920px';

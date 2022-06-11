@@ -31,24 +31,18 @@ img {
   height: auto;
 }
 
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 .title {
   margin: 0;
   padding: 0;
 }
 
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .team {
     background-color: white;
-  }
-
-.team__wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
   }
 
 .team__container {
@@ -56,13 +50,11 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 1 auto;
   padding: 30px;
 }
 
 .team__title {
   display: inline-block;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   line-height: 2.3rem;
   margin-bottom: 30px;
@@ -72,44 +64,46 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-.team__employees {
+.team__employees__cards {
   flex: 1 1 auto;
 }
 
 .team__employee__photo {
-  max-width: 315px;
-  max-height: 300px;
+  width: 315px;
+  height: 300px;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.team__employee__description {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+.team__employee__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__employee__about {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 15px 0 30px 0;
 }
 
 .team__employee__page_link {
-  color: $color-main;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25rem;
-
-  &::after {
-    content: url(../../img/icons/team_icons/team_more.svg);
-    vertical-align: top;
-    float: right;
-  }
-
-  &__-clear::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 p {
-  margin: 5px 0 0 0;
+  margin: 0;
+}
+
+.team__employee__name {
+  color: $color-main;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 5px;
 }
 
 .team__employee__position {
@@ -118,4 +112,87 @@ p {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.1rem;
+}
+
+.team__employee__page_link:hover .team__employee__name,
+.team__employee__page_link:hover svg path {
+  color: $color-accent;
+  stroke: $color-accent;
+}
+
+@media screen and ($tablet_sd) {
+
+  .team__container {
+    padding: 60px;
+  }
+
+  .team__title {
+    font-size: 2.375rem;
+    line-height: 3rem;
+    margin-bottom: 60px;
+  }
+  
+.team__employees__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.team__employee__photo {
+  height: 400px;
+  max-width: 294px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.team__employee__about {
+  padding: 15px 0 0 0;
+}
+
+}
+
+@media screen and ($tablet_hd) {
+
+  .team__title {
+    margin: 0 120px 60px 120px;
+  }
+  
+.team__employees__cards {
+  flex: 1 1 33.333%;
+  gap: 60px;
+}
+
+.team__employee__photo {
+  width: 261.33px;
+}
+
+}
+
+@media screen and ($desktop_sd) {
+
+  .team__employee__photo {
+    min-width: 400px;
+  }
+
+  .team__employee__photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and ($desktop_hd) {
+
+  .team__employee__photo {
+    min-width: 493.33px;
+  }
+
+  .team__employee__photo img {
+    width: 100%;
+    height: 100%;
+  }
+
 }
