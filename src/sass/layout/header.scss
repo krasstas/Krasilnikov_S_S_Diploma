@@ -82,7 +82,7 @@ button {
   text-decoration: none;
 }
 
-.header_address {
+.header__address p {
   display: none;
 }
 
@@ -126,4 +126,12 @@ button {
 .header_burger__btn:hover {
   background-color: $color-grey-separator;
   border-radius: 8px;
+}
+
+
+@media screen and ($tablet_sd) {
+
+  .team__container {
+    padding: 60px;
+  }
 }
