@@ -10,22 +10,43 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header_language">
-      <div class="header_language_panel">
-        <button class="btn">ук</button>
-        <button class="btn">ру</button>
-        <button class="btn is-active">en</button>
+  <div class="header_wrapper">
+    <header class="header">
+      <div class="header_block_1">
+        <div class="header_language_panel">
+          <button class="btn">ук</button>
+          <button class="btn">ру</button>
+          <button class="btn is-active">en</button>
+        </div>
+        <div class="header_phone">
+          <a href="tel:0800 211 927">0800 211 927</a>
+        </div>
+        <div class="header_address">
+          <p>Kyiv, Mechnikova str., 14/1</p>
+        </div>
       </div>
-    </div>
-    <div class="header_phone">0800 211 927</div>
-    <div class="header_bread_crumbs"></div>
-    <div class="header_burger">
-      <button class="header_burger__btn">
-        <img src="" alt="">
-      </button>
-    </div>
-  </header>
+      <div class="header_block_2">
+        <div class="header_bread_crumbs">
+          <ul class="header_bread_crumbs__items">
+            <li class="header_bread_crumbs__item">
+              <a href="#" class="header_bread_crumbs__link">
+                <img class="header_bread_crumbs__logo" 
+                src="../img/icons/header_icons/hlegal_logo.svg"alt="hlegal_logo">
+              </a>
+            </li>
+            <li class="header_bread_crumbs__item">
+              <a class="header_bread_crumbs__team" href="#">team</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_burger">
+          <button class="header_burger__btn">
+            <img src="../img/icons/header_icons/burger_transparent.svg" alt="menu_burger">
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
   <main class="team">
     <div class="wrapper">
       <div class="team__container">
@@ -45,8 +66,7 @@
                   <p class="team__employee__position">Managing partner</p>
                 </div>
                 <div class="team__employee__more">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" 
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="16" cy="16" r="16" fill="#F5F5FA" />
                     <path d="M13.5 23.5L20.5 16.5L13.5 9.5" stroke="#24A3FF" stroke-width="2" />
                   </svg>
@@ -154,58 +174,58 @@
     </div>
   </main>
   <div class="footer_wrapper">
-  <footer class="footer">
-    <div class="footer__block__address">
-      <ul class="footer__address">
-        <li class="footer__address__street">Kyiv, Mechnikova str., 14/1</li>
-        <li class="footer__dot_separator">
-          <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
-        </li>
-        <li><a href="#" class="on_map">On map</a></li>
-      </ul>
-    </div>
-    <div class="footer__block__contacts">
-      <ul class="footer__contacts">
-        <li class="facebook_logo is-mobile">
-          <a href="#" class="facebook_logo__link">
-          <svg class="facebook_logo__icon" width="39" height="38" viewBox="0 0 39 38" fill="none" 
-          xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_41045_434)">
-              <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 
+    <footer class="footer">
+      <div class="footer__block__address">
+        <ul class="footer__address">
+          <li class="footer__address__street">Kyiv, Mechnikova str., 14/1</li>
+          <li class="footer__dot_separator">
+            <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
+          </li>
+          <li><a href="#" class="on_map">On map</a></li>
+        </ul>
+      </div>
+      <div class="footer__block__contacts">
+        <ul class="footer__contacts">
+          <li class="facebook_logo is-mobile">
+            <a href="#" class="facebook_logo__link">
+              <svg class="facebook_logo__icon" width="39" height="38" viewBox="0 0 39 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_41045_434)">
+                  <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 
               8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 
               16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 
               19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 
               27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 
               22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 
               36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF" />
-            </g>
-            <defs>
-              <clipPath id="clip0_41045_434">
-                <rect width="38" height="38" fill="white" transform="translate(0.5)" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        </li>
-        <li class="footer__dot_separator">
-          <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
-        </li>
-        <li class="tel is-mobile">
-          <a href="tel:0800 211 927">0800 211 927</a>
-        </li>
-        <li class="footer__dot_separator">
-          <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
-        </li>
-        <li class="mail">
-          <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__block__llc">
-      <p class="llc">&copy; 2021 HLEGAL Law company, LLC</p>
-    </div>
-  </footer>
-</div>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41045_434">
+                    <rect width="38" height="38" fill="white" transform="translate(0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__dot_separator">
+            <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
+          </li>
+          <li class="tel is-mobile">
+            <a href="tel:0800 211 927">0800 211 927</a>
+          </li>
+          <li class="footer__dot_separator">
+            <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
+          </li>
+          <li class="mail">
+            <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block__llc">
+        <p class="llc">&copy; 2021 HLEGAL Law company, LLC</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
