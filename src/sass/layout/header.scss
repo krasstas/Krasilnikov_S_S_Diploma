@@ -39,12 +39,12 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .header_block_1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $color-grey-bg;
   padding: 15px;
 }
@@ -53,6 +53,11 @@ button {
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 15px;
+}
+
+.header__dot_separator {
+  display: none;
+  margin: 0 6px;
 }
 
 .btn {
@@ -73,6 +78,19 @@ button {
   color: white;
 }
 
+
+.header_address_street {
+  display: none;
+}
+
+.header_facebook_logo {
+  display: none;
+}
+
+.header_facebook_logo  {
+
+}
+
 .header_phone a {
   color: $color-grey-text;
   font-weight: 700;
@@ -82,8 +100,12 @@ button {
   text-decoration: none;
 }
 
-.header__address p {
-  display: none;
+.header_phone a:hover {
+  color: $color-accent;
+}
+
+.header_facebook_logo_link svg:hover path {
+  fill: $color-accent;
 }
 
 .header_block_2 {
@@ -101,6 +123,11 @@ button {
 
 .header_bread_crumbs__item a {
   display: inline-block;
+}
+
+.header_bread_crumbs_hlegal_logo {
+  width: 70px;
+  height: 33px;
 }
 
 .header_bread_crumbs__item::after {
@@ -131,7 +158,25 @@ button {
 
 @media screen and ($tablet_sd) {
 
-  .team__container {
-    padding: 60px;
+  .header_block_1 {
+    justify-content: flex-start;
+    padding: 15px 60px;
+  }
+
+  .header__dot_separator {
+    display: inline-block;
+  }
+
+  .header_address_street {
+    display: inline-block;
+  }
+
+  .header_facebook_logo {
+    display: inline-block;
+  }
+
+  .header_bread_crumbs_hlegal_logo {
+    width: 254px;
+    height: 105px;
   }
 }

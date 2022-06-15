@@ -89,7 +89,7 @@ ul {
   display: inline-block;
 }
 
-.facebook_logo__link svg:hover path {
+.foter_facebook_logo__link svg:hover path {
   fill: $color-accent;
 }
 
@@ -125,7 +125,7 @@ ul {
   .footer {
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 30px 185px;
+    padding: 30px 0 30px 185px;
     column-gap: 300px;
   }
 
