@@ -172,7 +172,20 @@ button {
   }
 
   .header_bread_crumbs_hlegal_logo {
-    width: 254px;
-    height: 105px;
+    width: 130px;
+    height: 60px;
+  }
+
+  .header_bread_crumbs__item::after {
+    content: url(../../img/icons/header_icons/slash.svg);
+    width: 21px;
+    height: 47px;
+    margin-left: 4px;
+    vertical-align: top;
+  }
+
+  .header_bread_crumbs__team {
+    font-size: 2.25rem;
+    line-height: 2.55rem;
   }
 }
