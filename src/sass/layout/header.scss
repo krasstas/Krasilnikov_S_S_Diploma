@@ -68,15 +68,17 @@ button {
   border-radius: 8px;
 }
 
+  .btn_active {
+    background-color: $color-accent;
+    color: white;
+  }
+
 .btn:hover {
   background-color: $color-grey-separator;
   color: white;
 }
 
-.is-active {
-  background-color: $color-accent;
-  color: white;
-}
+
 
 
 .header_address_street {
@@ -128,6 +130,7 @@ button {
 
 .header_bread_crumbs__item::after {
   content: url(../../img/icons/header_icons/slash.svg);
+  display: inline-block;
   width: 11.5px;
   height: 26px;
   margin-left: 4px;
@@ -152,9 +155,46 @@ button {
 }
 
 
+.header_block_3 {
+  padding: 30px 60px 0 60px;
+}
+
+.header_menu {
+  display: none;
+}
+
+.header_menu_items {
+  display: flex;
+  gap: 15px;
+}
+
+.header_menu_item {
+  font-weight: 700;
+  line-height: 1.25rem;
+  color: $color-active-regular;
+}
+
+.is-active {
+  color: $color-accent;
+  padding-bottom: 3px;
+  border-bottom: 2px solid $color-accent;
+}
+
+.header_burger {
+  display: block;
+  position: fixed;
+  top: 65px; right: 15px;
+}
+
+.header_burger__btn {
+  position: sticky;
+  top: 20px;
+}
+
 @media screen and ($tablet_sd) {
 
   .header_block_1 {
+    background-color: white;
     justify-content: flex-start;
     padding: 15px 60px;
   }
@@ -169,6 +209,10 @@ button {
 
   .header_facebook_logo {
     display: inline-block;
+  }
+
+  .header_block_2 {
+    padding: 15px 60px 0 60px;
   }
 
   .header_bread_crumbs_hlegal_logo {
@@ -188,4 +232,13 @@ button {
     font-size: 2.25rem;
     line-height: 2.55rem;
   }
+
+  .header_menu {
+    display: flex;
+  }
+
+  .header_burger {
+    display: none;
+  }
+  
 }
