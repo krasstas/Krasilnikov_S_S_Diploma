@@ -59,7 +59,7 @@ img {
   line-height: 2.3rem;
   margin-bottom: 30px;
   background-clip: text;
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: $color-gradient-red-text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -181,6 +181,10 @@ p {
 
 @media screen and ($desktop_sd) {
 
+  .team__employees__cards {
+    gap: 60px;
+}
+
   .team__employee__photo {
     min-width: 400px;
   }
@@ -190,6 +194,12 @@ p {
     height: 100%;
   }
 
+}
+
+@media screen and (min-width: 1900px) {
+  .team__employees__cards {
+    gap: 80px;
+}
 }
 
 @media screen and ($desktop_hd) {
