@@ -1,6 +1,6 @@
-@use 'utilities/variables' as *;
-@use "../base/normalize.scss";
-@use "../base/fonts.scss";
+@import "utilities/variables";
+@import "../base/normalize.scss";
+@import "../base/fonts.scss";
 
 html {
   font-size: 16px;

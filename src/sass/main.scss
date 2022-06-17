@@ -1,11 +1,11 @@
 
-@use 'utilities/variables' as *;
-@use 'base/normalize';
-@use 'base/fonts';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'components/buttons';
-@use 'pages/team';
+@use "utilities/variables";
+@use "base/normalize";
+@use "base/fonts";
+@use "layout/header";
+@use "layout/footer";
+@use "components/buttons";
+@use "pages/team";
 
 html {
     font-size: 16px;
