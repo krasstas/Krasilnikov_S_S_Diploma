@@ -1,8 +1,8 @@
 
-@use 'utilities/variables' as *;
-@use '../base/normalize.scss';
-@use '../base/fonts.scss';
-@use '../layout/header';
-@use '../layout/footer';
-@use '../components/buttons';
-@use '../layout/team_section';
+@import '../utilities/variables';
+@import '../base/normalize.scss';
+@import '../base/fonts.scss';
+@import '../layout/header';
+@import '../layout/footer';
+@import '../components/buttons';
+@import '../layout/team_section';
