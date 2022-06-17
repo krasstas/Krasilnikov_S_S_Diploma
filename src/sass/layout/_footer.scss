@@ -25,13 +25,17 @@ ul {
   background-color: #f5f5fa;
 }
 
+.footer__border__wrapper {
+  padding-top: 30px;
+  border-top: 20px solid #111186;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
-  border-top: 2px solid #e6e6f0;
+  padding: 30px;
   gap: 21px;
 }
 
