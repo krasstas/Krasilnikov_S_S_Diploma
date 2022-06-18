@@ -8,8 +8,11 @@
 @use 'components/buttons';
 @use 'pages/team';
 
-
-  .header_bread_crumbs__team & {
+  .header_bread_crumbs__item::after {
+    display: none;
+  }
+  
+  .is-main {
     display: none;
   }
   
