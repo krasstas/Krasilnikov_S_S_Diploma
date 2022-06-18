@@ -11,7 +11,7 @@
   .header_bread_crumbs__item::after {
     display: none;
   }
-  
+
   .is-main {
     display: none;
   }
@@ -54,6 +54,27 @@
       position: relative;
       z-index: 1;
     }
+  }
+
+  .services {
+  }
+
+  .services_link {
+    color: $color-active-regular;
+  }
+  .title {
+  }
+  .services__title {
+  }
+  .services_cards {
+  }
+  .services_cards__item {
+  }
+  .services_cards__item__icon {
+  }
+  .services_cards__item__title {
+  }
+  .services_cards__item__description {
   }
 
 
