@@ -8,6 +8,13 @@
 @use 'components/buttons';
 @use 'pages/team';
 
+
+.main_page_background {
+  background: $color-gradient-supersoft;
+  position: relative;
+}
+
+
   .header_bread_crumbs__item::after {
     display: none;
   }
@@ -21,6 +28,7 @@
     background-color: #323264;
     position: relative;
     overflow: hidden;
+    z-index: -2;
   
     &::before {
       content: url("data:image/svg+xml,%3Csvg viewBox='0 0 697 799' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_22728_11332)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M245.112 340H432.082C485.793 340 530.618 362.912 558.49 401.63C586.34 440.35 587.199 504.956 570.958 555.498L550.194 620.023C541.522 646.966 500.918 774.384 493 799H391C391 799 392.559 800.366 477.767 535.5C485.29 512.126 489.586 474.185 477.767 457.777C465.968 441.37 446.06 431.66 419.718 431.66H266.886C236.876 431.66 210.283 451.178 200.999 480.005L245.112 340Z' fill='url(%23paint0_linear_22728_11332)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M99.3445 799H-0.369385C84.4982 532.509 170.329 266.331 255.698 0H355.276C354.856 1.33198 354.431 2.6675 353.999 4.00646C215.866 429.03 262.985 285.497 99.3445 799Z' fill='%23F0145A'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_22728_11332' x1='521.823' y1='798.999' x2='268.503' y2='516.696' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F0145A'/%3E%3Cstop offset='1' stop-color='%23693264'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_22728_11332'%3E%3Crect width='697' height='799' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
@@ -29,7 +37,7 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 1;
+      z-index: -1;
     }
   
     &__scroll {
@@ -57,25 +65,131 @@
   }
 
   .services {
+    padding: 30px 30px 60px 30px;
+    position: relative;
   }
 
   .services_link {
+    display: block;
+    text-align: left;
+    color: $color-active-regular;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    &::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+      padding-left: 5px;
+      
+    }
+    
+    &:hover {
+      color: #F0145A;
+    }
+    
+    &:hover::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
+    }
+  }
+
+  .services__title {
+    display: inline-block;
+    background-clip: text;
+    background: $color-gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .services_cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 33.333%;
+  }
+
+  .services_cards__item {
+    padding-top: 30px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    border-radius: 24px;
+  }
+
+  &__title {
+    display: block;
+    padding: 30px 0 15px 0;
+  }
+
+  &__link {
     color: $color-active-regular;
   }
-  .title {
+
+  &__link:hover {
+    color: $color-accent;
   }
-  .services__title {
+
+  &__description {
+    line-height: 1.625rem;
+    display: block;
+    color: white;
   }
+
+}
+
+@media screen and ($tablet_sd) {
+
   .services_cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -30px;
   }
+  
   .services_cards__item {
+    flex: 0 1 50%;
+    padding: 30px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    border-radius: 24px;
   }
-  .services_cards__item__icon {
+
+  &__title {
+    display: block;
+    padding: 30px 0 15px 0;
   }
-  .services_cards__item__title {
+
+  &__link {
+    color: $color-active-regular;
   }
-  .services_cards__item__description {
+
+  &__link:hover {
+    display: block;
+    color: $color-accent;
+    padding: 30px 0 15px 0;
   }
+
+  &__description {
+    line-height: 1.625rem;
+    display: block;
+    color: white;
+  }
+}
+
+}
 
 
 
