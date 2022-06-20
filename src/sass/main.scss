@@ -4,8 +4,11 @@
 @use 'base/fonts';
 @use 'base/common';
 @use 'layout/header';
-@use 'layout/footer';
+@use 'layout/best_qualities_section';
 @use 'layout/services_section';
+@use 'layout/partners_section';
+@use 'layout/publications_section';
+@use 'layout/footer';
 @use 'components/buttons';
 @use 'pages/team';
 
