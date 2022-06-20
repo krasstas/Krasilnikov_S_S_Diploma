@@ -23,8 +23,8 @@
     &__item {
       color: $color-grey-text;
       font-weight: 700;
-      font-size: 2.375rem;
-      line-height: 2.875rem;
+      font-size: 1.875rem;
+      line-height: 2.3rem;
     }
   }
 
@@ -44,4 +44,24 @@
         line-height: 1.875rem;
     }
   }
+}
+
+@media screen and ($tablet_sd) {
+
+    .best_qualities {
+        padding: 60px 60px 30px 60px;
+
+        &__items {
+            margin-bottom: 60px;
+          }
+
+          &__list {
+        
+            &__item {
+                font-size: 2.375rem;
+                line-height: 2.875rem;
+            }
+          }
+    }
+
 }
