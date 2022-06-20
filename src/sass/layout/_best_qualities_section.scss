@@ -1,7 +1,47 @@
+@use "utilities/variables" as *;
+@use "base/normalize";
+@use "base/fonts";
+@use "base/common";
+@use "components/buttons";
 
-@use 'utilities/variables' as *;
-@use 'base/normalize';
-@use 'base/fonts';
-@use 'base/common';
-@use 'components/buttons';
+.best_qualities {
+  padding: 30px 30px 15px 30px;
 
+  &__items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow: hidden;
+
+    &__item {
+      color: $color-grey-text;
+      font-weight: 700;
+      font-size: 2.375rem;
+      line-height: 2.875rem;
+    }
+  }
+
+  &__description {
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 30px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.875rem;
+    }
+  }
+}
