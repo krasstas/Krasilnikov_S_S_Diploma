@@ -16,16 +16,22 @@
   &__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     gap: 30px;
-    overflow: hidden;
+    overflow-x: auto;
+    margin-right: -30px;
 
     &__item {
+      flex-shrink: 0;
       color: $color-grey-text;
       font-weight: 700;
       font-size: 1.875rem;
       line-height: 2.3rem;
     }
+
+    &__item:hover {
+      color: $color-accent;
+    }
+    
   }
 
   &__description {
@@ -44,6 +50,15 @@
         line-height: 1.875rem;
     }
   }
+
+  .is-active {
+    background-clip: text;
+    background: $color-gradient-red-text-reversed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 @media screen and ($tablet_sd) {
@@ -56,6 +71,7 @@
           }
 
           &__list {
+            margin-right: -60px;
         
             &__item {
                 font-size: 2.375rem;
@@ -63,5 +79,11 @@
             }
           }
     }
+
+}
+
+@media screen and ($tablet_sd) {
+
+
 
 }

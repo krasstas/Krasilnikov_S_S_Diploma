@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krasilnikov_S_S_Diploma</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
@@ -147,7 +148,7 @@
         <section class="best_qualities">
           <div class="best_qualities__items">
             <ul class="best_qualities__list">
-              <li class="h2 title best_qualities__list__item">Consistent</li>
+              <li class="h2 title best_qualities__list__item is-active">Consistent</li>
               <li class="h2 title best_qualities__list__item">Customer oriented</li>
               <li class="h2 title best_qualities__list__item">Innovative</li>
               <li class="h2 title best_qualities__list__item">Business oriented</li>
@@ -160,6 +161,13 @@
               accompany complex projects and achieve a number of important decisions for the
               industry. Many of them form the practice of applying the law of the sea in Ukraine.
             </p>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
           </div>
         </section>
         <section class="services">
@@ -398,6 +406,19 @@
     </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
+  </script>
 </body>
 
 </html>
