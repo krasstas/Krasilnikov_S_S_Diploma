@@ -4,3 +4,74 @@
 @use 'base/fonts';
 @use 'base/common';
 @use 'components/buttons';
+
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.partners_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.partners_cards {
+    display: grid;
+    grid-auto-rows: 120px;
+}
+
+.partners_cards_item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    }
+
+    .is-1 {
+        background-color: #1C4280;
+    }
+
+    .is-2 {
+        background-color: #143646;
+    }
+
+    .is-3 {
+        background-color: #F48B30;
+    }
+
+    .is-4 {
+        background-color: #9E4DC3;
+    }
+
+    .is-5 {
+        background-color: #FD9339;
+    }
+
+    .is-6 {
+        background-color: #E2E2E4;
+    }
+
+    .is-7 {
+        background-color: #C71C36;
+    }
+
+    .is-8 {
+        background-color: #DCF3F9;
+    }
+
+    .is-9 {
+        background-color: #EAEAEA;
+    }
+
+    .is-10 {
+        background-color: #282240;
+    }
+
+    .is-11 {
+        background-color: #1D4568;
+    }
+
+    .is-12 {
+        background-color: #000000;
+    }

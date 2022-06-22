@@ -25,11 +25,13 @@
     }
 
     &__item {
-      color: $color-grey-text;
-    }
+      &__btn {
+        color: $color-grey-text;
+      }
 
-    &__item:hover {
-      color: $color-accent;
+      &__btn:hover {
+        color: $color-accent;
+      }
     }
   }
 
