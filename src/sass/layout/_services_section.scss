@@ -51,7 +51,6 @@
     display: block;
     color: white;
   }
-
 }
 
 @media screen and ($tablet_sd) {
@@ -108,12 +107,10 @@
 
 @media screen and ($tablet_hd) {
 
-  
   .services_cards__item {
     flex: 0 1 33.333%;
     padding: 30px;
 }
-
 }
 
 .services__section_shadow {
