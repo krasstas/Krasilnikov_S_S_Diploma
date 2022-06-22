@@ -37,6 +37,15 @@ html {
     font-weight: 700;
   }
 
+  .section_title {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-clip: text;
+    background: $color-gradient-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
   h2 {
     font-size: 1.875rem;
     line-height: 2.3rem;
@@ -60,6 +69,32 @@ html {
   .wrapper {
     max-width: 1920px;
     margin: 0 auto;
+  }
+
+  .more_link {
+    display: block;
+    text-align: left;
+    color: $color-active-regular;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    &::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+      padding-left: 5px;
+      
+    }
+    
+    &:hover {
+      color: #F0145A;
+    }
+    
+    &:hover::after {
+      content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
+    }
   }
 
   @media screen and ($tablet_sd) {

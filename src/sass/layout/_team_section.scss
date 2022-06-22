@@ -18,15 +18,6 @@
   padding: 30px;
 }
 
-.team__title {
-  display: inline-block;
-  margin-bottom: 30px;
-  background-clip: text;
-  background: $color-gradient-red-text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .team__employees__cards {
   flex: 1 1 auto;
 }
