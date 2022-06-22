@@ -80,23 +80,16 @@
 
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
+
+    .partners_cards {
+      &:nth-child(n + 7) {
+        display: grid;
+      }
+    }
   }
 
   @media screen and ($tablet_sd) {
     grid-template-columns: repeat(3, 1fr);
-
-    .partners_cards {
-      &__item {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        min-width: 100%;
-
-        &:nth-child(n + 7) {
-          display: grid;
-        }
-      }
-    }
   }
 
   @media screen and ($tablet_hd) {
