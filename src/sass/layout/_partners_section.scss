@@ -1,77 +1,105 @@
-
-@use 'utilities/variables' as *;
-@use 'base/normalize';
-@use 'base/fonts';
-@use 'base/common';
-@use 'components/buttons';
-
+@use "utilities/variables" as *;
+@use "base/normalize";
+@use "base/fonts";
+@use "base/common";
+@use "components/buttons";
 
 .partners {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
 .partners_title {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.partners_cards {
-    display: grid;
-    grid-auto-rows: 120px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.partners_cards_item {
+.partners_cards {
+  display: grid;
+  grid-auto-rows: 120px;
+
+  &__item {
     display: grid;
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    }
 
-    .is-1 {
-        background-color: #1C4280;
+    &:nth-child(n + 7) {
+      display: none;
     }
+  }
 
-    .is-2 {
-        background-color: #143646;
-    }
+  .is-1 {
+    background-color: #1c4280;
+  }
 
-    .is-3 {
-        background-color: #F48B30;
-    }
+  .is-2 {
+    background-color: #143646;
+  }
 
-    .is-4 {
-        background-color: #9E4DC3;
-    }
+  .is-3 {
+    background-color: #f48b30;
+  }
 
-    .is-5 {
-        background-color: #FD9339;
-    }
+  .is-4 {
+    background-color: #9e4dc3;
+  }
 
-    .is-6 {
-        background-color: #E2E2E4;
-    }
+  .is-5 {
+    background-color: #fd9339;
+  }
 
-    .is-7 {
-        background-color: #C71C36;
-    }
+  .is-6 {
+    background-color: #e2e2e4;
+  }
 
-    .is-8 {
-        background-color: #DCF3F9;
-    }
+  .is-7 {
+    background-color: #c71c36;
+  }
 
-    .is-9 {
-        background-color: #EAEAEA;
-    }
+  .is-8 {
+    background-color: #dcf3f9;
+  }
 
-    .is-10 {
-        background-color: #282240;
-    }
+  .is-9 {
+    background-color: #eaeaea;
+  }
 
-    .is-11 {
-        background-color: #1D4568;
-    }
+  .is-10 {
+    background-color: #282240;
+  }
 
-    .is-12 {
-        background-color: #000000;
+  .is-11 {
+    background-color: #1d4568;
+  }
+
+  .is-12 {
+    background-color: #000000;
+  }
+
+  @media screen and (min-width: 568px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and ($tablet_sd) {
+    grid-template-columns: repeat(3, 1fr);
+
+    .partners_cards {
+      &__item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+
+        &:nth-child(n + 7) {
+          display: grid;
+        }
+      }
     }
+  }
+
+  @media screen and ($tablet_hd) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
