@@ -3,28 +3,28 @@
 @use 'base/normalize';
 @use 'base/fonts';
 @use 'base/common';
-@use 'components/buttons';
 
 
 .publications {
     padding: 30px;
+
+&__cards {
+    display: grid;
+
+&__item {
+    margin-bottom: 30px;
 }
 
-.publications_cards {
+&__title {
 }
 
-.publications_cards__item {
+&__date {
 }
 
-.publications_cards__item__title {
+&__description {
 }
 
-.publications_cards__item__date {
+&__icon {
 }
-
-.publications_cards__item__description {
 }
-
-.publications_cards__item__icon {
 }
-
