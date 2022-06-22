@@ -43,6 +43,8 @@
 
     &__title {
       margin-bottom: 30px;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
     }
 
     &__text {
@@ -68,6 +70,14 @@
 
     &__list {
       min-width: calc(100% + 60px);
+    }
+
+    &__description {
+  
+      &__title {
+        font-size: 1.875rem;
+        line-height: 2.3rem;
+      }
     }
   }
 }

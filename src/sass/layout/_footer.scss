@@ -3,13 +3,8 @@
 @use '../base/fonts';
 @use '../base/common';
 
-.footer_wrapper {
+.footer__wrapper {
   background-color: #f5f5fa;
-}
-
-.footer__border__wrapper {
-  margin-top: 30px;
-  border-top: 2px solid #e6e6f0;
 }
 
 .footer {
@@ -29,6 +24,14 @@
   display: inline-block;
   text-align: center;
   color: $color-main;
+  border-top: 2px solid $color-grey-separator;
+  padding-top: 30px;
+
+  .is-team & {
+    border-top:none;
+    padding-top: 0;
+  }
+
 }
 
 .footer__address {
