@@ -1,34 +1,65 @@
-
-@use 'utilities/variables' as *;
-@use 'base/normalize';
-@use 'base/fonts';
-@use 'base/common';
-
+@use "utilities/variables" as *;
+@use "base/normalize";
+@use "base/fonts";
+@use "base/common";
 
 .team__main {
-    background-color: rgb(202, 67, 67);
+  background-color: white;
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+  @media screen and ($tablet_sd) {
+    padding: 60px 60px 30px 60px;
   }
 
-.team__main__cards {
-    background-color: $color-grey-bg;
+  @media screen and ($desktop_hd) {
+    padding: 60px 160px 30px 160px;
+  }
+
+    &__item {
+        background-color: $color-grey-bg;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @media screen and ($tablet_hd) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+        &__photo {
+            height: 500px;
+            overflow: hidden;
+
+            @media screen and ($tablet_hd) {
+                min-width: 400px;
+                height: auto;
+              }
+
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__description {
+            padding: 30px;
+
+            &__name {
+                color: $color-grey-text;
+                padding-bottom: 6px;
+            }
+
+            &__position {
+                color: $color-grey-text;
+            }
+        }
+    }
+  }
 }
-.team__main__card {
-}
-.team__main__card__photo {
-}
-.team__main__card_photo__img {
-}
-.team_member__description {
-}
-.more_link {
-}
-.h2 {
-}
-.title {
-}
-.section_title {
-}
-.team_member__name {
-}
-.team_member__position {
-}
+
+
