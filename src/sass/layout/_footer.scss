@@ -122,16 +122,16 @@
     padding: 30px 0;
     column-gap: 80px;
   }
+  
+  .footer__block__address {
+    order: 1;
+  }
 
   .footer__address {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     gap: 10px;
-  }
-
-  .footer__block__address {
-    order: 1;
   }
 
   .footer__dot_separator {
@@ -142,15 +142,15 @@
     margin-bottom: 0;
   }
 
+  .footer__block__contacts {
+    order: 3;
+  }
+
   .footer__contacts {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-  }
-  .footer__block__contacts {
-    align-self: flex-start;
-    order: 3;
   }
 
   .footer__block__llc {
