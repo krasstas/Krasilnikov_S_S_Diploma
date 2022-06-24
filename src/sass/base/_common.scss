@@ -121,3 +121,21 @@ html {
       line-height: 2.3rem;
     }
   }
+
+  .svg_logo {
+    width: 69px;
+    height: 32px;
+
+    & > path:not(:first-child) {
+      fill: $color-main;
+    }
+
+    .is-main & > path:not(:first-child) {
+      fill: white;
+    }
+
+    @media screen and ($tablet_sd) {
+      width: 130px;
+      height: 60px;
+    }
+  }
