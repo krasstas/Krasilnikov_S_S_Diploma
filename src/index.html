@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
 
-<body>
+<body class="is-main">
   <div class="main_page_background">
-    <section class="wrapper header_section">
-      <header class="header is-main">
+    <section class="header_section wrapper">
+      <header class="header">
         <div class="header_block_1">
           <div class="header_language_panel">
             <button class="btn">ук</button>
@@ -21,7 +21,10 @@
             <button class="btn btn_active">en</button>
           </div>
           <div class="header__dot_separator">
-            <img src="../img/icons/header_icons/dot_separator.svg" alt="dot_separator">
+            <svg class="header__dot_separator__icon" width="6" height="6" 
+            viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="3" cy="3" r="3" fill="#B3B3BA"/>
+            </svg>
           </div>
           <div class="header_address">
             <p class="header_address_street">Kyiv, Mechnikova str., 14/1</p>
@@ -51,10 +54,10 @@
         </div>
         <div class="header_block_2">
           <div class="header_bread_crumbs">
-            <ul class="header_bread_crumbs__items is-main">
+            <ul class="header_bread_crumbs__items">
               <li class="header_bread_crumbs__item">
                 <a href="index.html" class="header_bread_crumbs__home_link">
-                  <svg class="svg_logo header_bread_crumbs_hlegal_logo" viewBox="0 0 70 33" fill="none"
+                  <svg class="svg_logo" viewBox="0 0 70 33" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.64358 6.10352e-05H0V19.0926H2.64358V12.0095C2.64358 10.8112 2.94163 9.86589 3.53774 9.20018C4.13384 8.53447 4.95024 8.1883 5.96102 8.1883C6.82926 8.1883 7.55495 8.50784 8.13809 9.1203C8.72123 9.74607 9.01929 10.5316 9.01929 11.4769V19.106H11.6758V11.4769C11.6758 9.71944 11.1964 8.33476 10.2374 7.29625C9.27846 6.25774 8.02146 5.73849 6.49233 5.73849C6.05173 5.73849 5.61114 5.79174 5.1835 5.91157C4.7429 6.0314 4.39301 6.16454 4.10792 6.311C3.82283 6.45746 3.5507 6.61723 3.30448 6.80363C3.05826 6.99002 2.8898 7.12317 2.81205 7.20305C2.7343 7.28294 2.6695 7.33619 2.64358 7.37614V6.10352e-05Z"
@@ -116,8 +119,8 @@
               <li class="header_menu_item">
                 <a href="#" class="header_menu_item_link">services</a>
               </li>
-              <li class="header_menu_item is-active">
-                <a href="team.html" class="header_menu_item_link">team
+              <li class="header_menu_item">
+                <a href="team.html" class="header_menu_item_link is-active">team
               </li>
               </a>
               <li class="header_menu_item">

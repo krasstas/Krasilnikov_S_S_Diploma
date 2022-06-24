@@ -139,3 +139,10 @@ html {
       height: 60px;
     }
   }
+
+  .header__dot_separator__icon {
+    
+    .is-main & {
+      fill: white;
+    }
+  }
