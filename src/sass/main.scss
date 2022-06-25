@@ -17,13 +17,9 @@
   background: $color-gradient-supersoft;
   position: relative;
   border-radius: 0 0 12px 12px;
-  z-index: -5;
+  z-index: -15;
 }
 
-
-  .header_bread_crumbs__item::after {
-    display: none;
-  }
 
 
 
