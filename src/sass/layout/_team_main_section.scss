@@ -5,12 +5,8 @@
 
 .team__main {
   background-color: white;
+  padding: 30px;
 
-  &__cards {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    
   @media screen and ($tablet_sd) {
     padding: 60px 60px 30px 60px;
   }
@@ -19,7 +15,13 @@
     padding: 60px 160px 30px 160px;
   }
 
+  &__cards {
+    display: flex;
+    
+
+
     &__item {
+      flex-direction: column;
         background-color: $color-grey-bg;
         border-radius: 12px;
         overflow: hidden;
@@ -56,6 +58,7 @@
 
             &__position {
                 color: $color-grey-text;
+                padding-bottom: 30px;
             }
         }
     }

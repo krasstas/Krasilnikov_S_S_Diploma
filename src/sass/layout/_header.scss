@@ -223,7 +223,7 @@
   }
 }
 
-.header_menu_item_link:hover {
+.header_menu_item_link:active {
   color: $color-active-regular;
   border-bottom: 2px solid $color-active-regular;
 
@@ -237,6 +237,7 @@
   display: block;
   position: absolute;
   top: 65px; right: 15px;
+  z-index: 9;
 }
 
 .header_burger__btn:hover {
