@@ -12,7 +12,7 @@
 <body>
   <div class="header_wrapper wrapper">
     <header class="header">
-      <div class="header_block_1">
+      <div class="header__block__language_switcher">
         <div class="header_language_panel">
           <button class="btn">ук</button>
           <button class="btn">ру</button>
@@ -48,7 +48,7 @@
           </a>
         </div>
       </div>
-      <div class="header_block_2">
+      <div class="header__block__bread_crumbs">
         <div class="header_bread_crumbs">
           <ul class="header_bread_crumbs__items">
             <li class="header_bread_crumbs__item">
@@ -79,30 +79,44 @@
           </ul>
         </div>
       </div>
-      <div class="header_block_3">
-        <nav class="nav_header_menu">
-          <ul class="header_menu_items">
-            <li class="header_menu_item">
-              <a href="#" class="header_menu_item_link">about us</a>
-            </li>
-            <li class="header_menu_item">
-              <a href="#" class="header_menu_item_link">services</a>
-            </li>
-            <li class="header_menu_item">
-              <a href="team.html" class="header_menu_item_link is-active">team</li>
+      <div class="header__block__nav_menu">
+        <input type="checkbox" id="burger">
+        <label for="burger">
+          <svg class="burger_btn" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" d="M-1-1h582v402H-1z" />
+            <g>
+              <path stroke-width="2" stroke="#323264" d="M7 10h18M7 16h18M7 22h18" />
+            </g>
+          </svg>
+        </label>
+        <div class="wrapper__nav_header_menu">
+          <nav class="nav_header_menu">
+            <label for="burger">
+              <svg class="close_btn" width="18" height="18" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+              </svg>
+            </label>
+            <ul class="header_menu_items">
+              <li class="header_menu_item">
+                <a href="#" class="header_menu_item_link">about us</a>
+              </li>
+              <li class="header_menu_item">
+                <a href="#" class="header_menu_item_link">services</a>
+              </li>
+              <li class="header_menu_item">
+                <a href="team.html" class="header_menu_item_link is-active">team
+              </li>
               </a>
-            <li class="header_menu_item">
-              <a href="#" class="header_menu_item_link">publications</a>
-            </li>
-            <li class="header_menu_item">
-              <a href="#" class="header_menu_item_link">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header_burger">
-          <button class="header_burger__btn">
-            <img src="../img/icons/header_icons/burger_transparent_dark.svg" alt="menu_burger">
-          </button>
+              <li class="header_menu_item">
+                <a href="#" class="header_menu_item_link">publications</a>
+              </li>
+              <li class="header_menu_item">
+                <a href="#" class="header_menu_item_link">contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -221,7 +235,7 @@
       </div>
     </div>
   </main>
-  <div class="wrapper footer__background is-team">
+  <div class=" footer__backgroundwrapper is-team">
     <div class="footer__wrapper">
     <footer class="footer">
         <div class="footer__block__address">
