@@ -97,15 +97,16 @@ html {
     &::after {
       content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
       padding-left: 5px;
-      
     }
     
     &:hover {
       color: #F0145A;
+      transition: 400ms;
     }
     
     &:hover::after {
       content: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L6 5.5L1.5 10' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
+      transition: 400ms;
     }
   }
 

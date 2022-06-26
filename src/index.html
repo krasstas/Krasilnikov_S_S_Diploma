@@ -110,30 +110,43 @@
           </div>
         </div>
         <div class="header_block_3">
-          <nav class="nav_header_menu">
-            <ul class="header_menu_items">
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_item_link">about us</a>
-              </li>
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_item_link">services</a>
-              </li>
-              <li class="header_menu_item">
-                <a href="team.html" class="header_menu_item_link is-active">team
-              </li>
-              </a>
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_item_link">publications</a>
-              </li>
-              <li class="header_menu_item">
-                <a href="#" class="header_menu_item_link">contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header_burger">
-            <button class="header_burger__btn">
-              <img src="../img/icons/header_icons/burger_transparent_white.svg" alt="menu_burger">
-            </button>
+          <input type="checkbox" id="burger">
+          <label for="burger">
+            <svg class="burger_btn" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M-1-1h582v402H-1z" />
+              <g>
+                <path stroke-width="2" stroke="#fff" d="M7 10h18M7 16h18M7 22h18" />
+              </g>
+            </svg>
+          </label>
+          <div class="wrapper__nav_header_menu">
+            <nav class="nav_header_menu">
+              <label for="burger">
+                <svg class="close_btn" width="18" height="18" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                  <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+              </label>
+              <ul class="header_menu_items">
+                <li class="header_menu_item">
+                  <a href="#" class="header_menu_item_link">about us</a>
+                </li>
+                <li class="header_menu_item">
+                  <a href="#" class="header_menu_item_link">services</a>
+                </li>
+                <li class="header_menu_item">
+                  <a href="team.html" class="header_menu_item_link is-active">team
+                </li>
+                </a>
+                <li class="header_menu_item">
+                  <a href="#" class="header_menu_item_link">publications</a>
+                </li>
+                <li class="header_menu_item">
+                  <a href="#" class="header_menu_item_link">contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>
@@ -276,124 +289,119 @@
   </div>
   <section class="team__main">
     <div class="swiper">
-    <div class="team__main__cards swiper-wrapper">
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_1.png" 
-          class="team__main__cards__item__photo__img" alt="Alexander Alexandrovsky photo">
+      <div class="team__main__cards swiper-wrapper">
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_1.png" class="team__main__cards__item__photo__img"
+              alt="Alexander Alexandrovsky photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Alexander Alexandrovsky
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Managing partner
+            </p>
+          </div>
         </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Alexander Alexandrovsky
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Managing partner
-          </p>
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_2.png" class="team__main__cards__item__photo__img" alt="Evgeny Patrikov photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Evgeny Patrikov
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Equity partner, Attorney-at-law
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_2.png" 
-          class="team__main__cards__item__photo__img" alt="Evgeny Patrikov photo">
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_3.png" class="team__main__cards__item__photo__img" alt="Vladislav Melnik photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Vladislav Melnik
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Associate
+            </p>
+          </div>
         </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Evgeny Patrikov
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Equity partner, Attorney-at-law
-          </p>
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_4.png" class="team__main__cards__item__photo__img" alt="Sergey Binn photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Sergey Binn
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Associate
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_3.png" 
-          class="team__main__cards__item__photo__img" alt="Vladislav Melnik photo">
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_5.png" class="team__main__cards__item__photo__img" alt="Oksana Kobzar photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Oksana Kobzar
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Equity partner, Attorney-at-law
+            </p>
+          </div>
         </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Vladislav Melnik
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Associate
-          </p>
-        </div>
-      </div>
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_4.png" 
-          class="team__main__cards__item__photo__img" alt="Sergey Binn photo">
-        </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Sergey Binn
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Associate
-          </p>
-        </div>
-      </div>
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_5.png" 
-          class="team__main__cards__item__photo__img" alt="Oksana Kobzar photo">
-        </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Oksana Kobzar
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Equity partner, Attorney-at-law
-          </p>
-        </div>
-      </div>
-      <div class="team__main__cards__item swiper-slide">
-        <div class="team__main__cards__item__photo">
-          <img src="img/team_img/team_6.png" 
-          class="team__main__cards__item__photo__img" alt="Julia Wolk photo">
-        </div>
-        <div class="team__main__cards__item__description">
-          <a href="team.html" class="more_link">team</a>
-          <h2 class="h2 title section_title">We are used to taking responsibility
-            and always guarantee honest, timely assistance, even in situations
-            where most are powerless.
-          </h2>
-          <h4 class=" h4 title team__main__cards__item__description__name">
-            Julia Wolk
-          </h4>
-          <p class="team__main__cards__item__description__position">
-            Associate, Attorney-at-law
-          </p>
+        <div class="team__main__cards__item swiper-slide">
+          <div class="team__main__cards__item__photo">
+            <img src="img/team_img/team_6.png" class="team__main__cards__item__photo__img" alt="Julia Wolk photo">
+          </div>
+          <div class="team__main__cards__item__description">
+            <a href="team.html" class="more_link">team</a>
+            <h2 class="h2 title section_title">We are used to taking responsibility
+              and always guarantee honest, timely assistance, even in situations
+              where most are powerless.
+            </h2>
+            <h4 class=" h4 title team__main__cards__item__description__name">
+              Julia Wolk
+            </h4>
+            <p class="team__main__cards__item__description__position">
+              Associate, Attorney-at-law
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="swiper-pagination">
-    </div>
+      <div class="swiper-pagination">
+      </div>
     </div>
   </section>
   <section class="partners">
@@ -498,7 +506,7 @@
             <li class="footer__dot_separator">
               <img src="../img/icons/footer_icons/dot_separator.svg" alt="dot_separator">
             </li>
-            <li><a href="#" class="on_map">On map</a></li>
+            <li><a href="https://g.page/hillel-it-school-od?share" class="on_map">On map</a></li>
           </ul>
         </div>
         <div class="footer__block__contacts">
@@ -549,14 +557,11 @@
   </script>
   <script>
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
       loop: true,
 
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
-
     });
   </script>
 </body>

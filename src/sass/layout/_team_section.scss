@@ -65,6 +65,7 @@ p {
 .team__employee__page_link:hover svg path {
   color: $color-accent;
   stroke: $color-accent;
+  transition: 400ms;
 }
 
 @media screen and ($tablet_sd) {

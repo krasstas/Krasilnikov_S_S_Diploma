@@ -53,13 +53,15 @@
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
   z-index: 21;
 }
 
 .header_block_1 {
   background-color: $color-grey-bg;
+  flex: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +100,7 @@
   color: white;
 }
 
-.btn:hover {
+.btn:active {
   background-color: $color-grey-separator;
   color: white;
 }
@@ -129,21 +131,22 @@
   }
 }
 
-.header_phone a:hover {
+.header_phone a:active {
   color: $color-accent;
 }
 
-.header_facebook_logo_link svg:hover path {
+.header_facebook_logo_link svg:active path {
   fill: $color-accent;
 }
 
 .header_block_2 {
   display: flex;
+  flex: 100%;
+  max-width: 50%;
   justify-content: space-between;
   align-items: flex-start;
   padding: 12.5px 15px;
   position: relative;
-  z-index: 9;
 }
 
 .header_bread_crumbs__items {
@@ -185,31 +188,64 @@
 }
 
 .header_block_3 {
-  padding: 0 60px;
+  display: flex;
+  order: 3;
+  flex: 50%;
+}
+
+.wrapper__nav_header_menu {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  background: #323264;
+  z-index: 6;
 }
 
 .nav_header_menu {
-  display: none;
-  position: relative;
-  z-index: 8;
+  // display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 16px);
+  background: white;
+  z-index: 5;
+  border-radius: 12px 12px 0px 0px;
+  padding: 12px;
 }
 
 .header_menu_items {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
+  margin-top: 27px;
 }
 
 .header_menu_item {
+  width: 100%;
   font-weight: 700;
   line-height: 1.25rem;
+  text-align: center;
+  padding: 7px 0;
+  background-color: $color-grey-bg;
+  border-radius: 12px;
+
+  &:active {
+    background-color: $color-grey-separator;
+  }
   }
 
 .header_menu_item_link {
   color: $color-active-regular;
 
-  .is-main & {
-    color: white;
-  }
+  // .is-main & {
+  //   color: white;
+  // }
 }
 
 .is-active {
@@ -233,16 +269,31 @@
   }
 }
 
-.header_burger {
+.burger_btn {
   display: block;
   position: absolute;
   top: 65px; right: 15px;
-  z-index: 9;
+  z-index: 6;
+  cursor: pointer;
 }
 
-.header_burger__btn:hover {
+.burger_btn:active {
   background-color: $color-grey-separator;
   border-radius: 8px;
+  transition: 400ms;
+}
+.close_btn {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#burger {
+  display: none;
+}
+
+#burger:checked + label + .wrapper__nav_header_menu {
+  display: block;
 }
 
 @media screen and ($tablet_sd) {
@@ -255,6 +306,12 @@
     .is-main & {
       background-color: transparent;
     }
+  }
+
+  .btn:hover {
+    background-color: $color-grey-separator;
+    color: white;
+    transition: 400ms;
   }
 
   .header__dot_separator {
@@ -271,8 +328,23 @@
     }
   }
 
+  .header_phone a:hover {
+    color: $color-accent;
+    transition: 400ms;
+  }
+
   .header_facebook_logo {
     display: inline-block;
+  }
+  
+  .header_facebook_logo_link svg:hover path {
+    fill: $color-accent;
+    transition: 400ms;
+  }
+
+  .header_phone a:hover {
+    color: $color-accent;
+    transition: 400ms;
   }
 
   .header_block_2 {
@@ -290,6 +362,15 @@
   .header_bread_crumbs__team {
     font-size: 2.25rem;
     line-height: 2.55rem;
+  }
+  .header_menu_item_link:hover {
+    color: $color-active-regular;
+    border-bottom: 2px solid $color-active-regular;
+  
+    .is-main & {
+      color: white;
+      border-bottom: 2px solid white;
+    }
   }
 
   .nav_header_menu {

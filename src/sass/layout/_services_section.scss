@@ -43,6 +43,7 @@
 
   &__link:hover {
     color: $color-accent;
+    transition: 400ms;
   }
 
   &__description {
@@ -93,6 +94,7 @@
   &__link:hover {
     display: block;
     color: $color-accent;
+    transition: 400ms;
   }
 
   &__description {
