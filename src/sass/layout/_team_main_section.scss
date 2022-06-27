@@ -6,6 +6,7 @@
 .team__main {
   background-color: white;
   padding: 30px;
+  position: relative;
 
   @media screen and ($tablet_sd) {
     padding: 60px 60px 30px 60px;
@@ -31,7 +32,9 @@
             flex-direction: row;
             justify-content: space-between;
           }
+    // Поменять картинке ширbну
 
+    // Завернуть публикации в ссылку
         &__photo {
             height: 500px;
             overflow: hidden;
@@ -65,4 +68,22 @@
   }
 }
 
+.swiper {
+  margin-bottom: 30px;
+}
+
+
+.swiper-pagination {
+
+  .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+    background-color: $color-active-regular;
+    opacity: 0.2;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
 

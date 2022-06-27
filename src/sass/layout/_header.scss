@@ -265,7 +265,7 @@
   &:active {
     background-color: $color-grey-separator;
   }
-  }
+}
 
 .header_menu_item_link {
   color: $color-active-regular;
@@ -359,28 +359,70 @@
     font-size: 2.25rem;
     line-height: 2.55rem;
   }
-
+  
   .header__block__nav_menu {
     flex-direction: row;
     padding: 0 60px 0 60px;
   }
 
+
   .wrapper__nav_header_menu {
     display: block;
     position: static;
+    transform: translateX(0);
+    height: auto;
+    background: transparent;
+    z-index: 6;
+  }
+
+  .nav_header_menu {
+    position: static;
+    transform: translateX(0);
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  [for="burger"] {
+    display: none;
+  }
+
+  .header_menu_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0;
+  }
+  
+  .header_menu_item {
+    width: auto;
+    font-weight: 700;
+    line-height: 1.25rem;
+    text-align: right;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0px;
+  
+    &:active {
+      background-color: $color-grey-separator;
+    }
+  }
+  
+  .header_menu_item_link {
+    color: $color-active-regular;
   }
   
 
   .header_menu_item_link {
-  
+
     .is-main & {
     color: white;
     }
   }
 
-  .burger_btn {
-    display: none;
-  }
+
 
   .header_menu_item_link:hover {
     color: $color-active-regular;
@@ -405,35 +447,32 @@
 @media screen and ($tablet_hd) {
 
   .header {
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 
+      "logo lang"
+      "logo nav";
+
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 50px 60px 0 60px;
     align-items: center;
-    row-gap: 10px;
+    padding: 50px 60px; 
+  }
+
+  .header_bread_crumbs__item {
+    display: flex;
   }
 
   .header__block__language_switcher {
-    order: 2;
+    grid-area: lang;
     padding: 0;
   }
 
   .header__block__bread_crumbs {
-    align-self: flex-start;
-    order: 1;
-    padding:0;
-    margin-bottom: -30px;
-  }
-
-  .header__block__nav_menu {
-    width: 100%;
-    order: 3;
+    grid-area: logo;
     padding: 0;
   }
 
-  .header_menu_items {
-    width: 100%;
-    justify-content: flex-end;
+  .header__block__nav_menu {
+    grid-area: nav;
   }
 }
 
