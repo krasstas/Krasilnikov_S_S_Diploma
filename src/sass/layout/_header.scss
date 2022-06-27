@@ -1,15 +1,13 @@
-
-@use '../utilities/variables' as *;
-@use '../base/normalize';
-@use '../base/fonts';
-@use '../base/common';
-
+@use "../utilities/variables" as *;
+@use "../base/normalize";
+@use "../base/fonts";
+@use "../base/common";
 
 .header_section {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  
+
   &__intro {
     position: absolute;
     top: 50%;
@@ -30,7 +28,6 @@
     z-index: -1;
   }
 
-
   &__scroll {
     position: absolute;
     bottom: 30px;
@@ -40,16 +37,15 @@
     z-index: 3;
   }
 
-  &__scroll svg > * { 
+  &__scroll svg > * {
     transition: stroke 300ms;
   }
 
   &__scroll:hover svg > *,
   &__scroll:focus svg > * {
-    stroke: #F0145A;
+    stroke: #f0145a;
   }
 }
-
 
 .header {
   display: flex;
@@ -57,6 +53,7 @@
   flex-wrap: wrap;
   position: relative;
   z-index: 21;
+  gap: 30px;
 }
 
 .header__block__language_switcher {
@@ -73,14 +70,11 @@
 }
 
 .header_language_panel {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 15px;
-}
-
-.header__dot_separator {
-  display: none;
-  margin: 0 6px;
 }
 
 .btn {
@@ -107,10 +101,29 @@
 
 .header_address {
   display: none;
+
+  &::before {
+    content: url(../img/icons/header_icons/dot_separator.svg);
+    margin: 0 6px;
+  }
+}
+
+.header_phone {
+  display: none;
+  
+  &::before {
+    content: url(../img/icons/header_icons/dot_separator.svg);
+    margin: 0 6px;
+  }
 }
 
 .header_facebook_logo {
   display: none;
+
+  &::before {
+    content: url(../img/icons/header_icons/dot_separator.svg);
+    margin: 0 6px;
+  }
 }
 
 .header_facebook_logo_link svg path {
@@ -220,11 +233,11 @@
 .burger_btn {
   display: block;
   position: absolute;
-  top: 65px; right: 15px;
+  top: 65px;
+  right: 15px;
   z-index: 6;
   cursor: pointer;
 }
-
 
 .burger_btn:active {
   background-color: $color-grey-separator;
@@ -293,11 +306,10 @@
 }
 
 @media screen and ($tablet_sd) {
-
   .header__block__language_switcher {
     background-color: white;
     justify-content: flex-start;
-    padding: 50px 60px 30px 60px;
+    padding: 50px 60px 0 60px;
 
     .is-main & {
       background-color: transparent;
@@ -310,29 +322,27 @@
     transition: 400ms;
   }
 
-  .header__dot_separator {
-    display: inline-block;
-  }
-
   .header_address {
-    display: inline-block;
-  }
+    display: flex;
+    align-items: center;
 
-  .header_address_street {
-    .is-main & {
-      color: white;
+    &__street {
+      .is-main & {
+        color: white;
+      }
     }
   }
 
-  .header_phone a:hover {
-    color: $color-accent;
-    transition: 400ms;
+  .header_phone {
+    display: flex;
+    align-items: center;
   }
 
   .header_facebook_logo {
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
-  
+
   .header_facebook_logo_link svg:hover path {
     fill: $color-accent;
     transition: 400ms;
@@ -344,7 +354,7 @@
   }
 
   .header__block__bread_crumbs {
-    padding: 0 60px 30px 60px;
+    padding: 0 0 0 60px;
   }
 
   .header_bread_crumbs__item::after {
@@ -359,12 +369,11 @@
     font-size: 2.25rem;
     line-height: 2.55rem;
   }
-  
+
   .header__block__nav_menu {
     flex-direction: row;
-    padding: 0 60px 0 60px;
+    padding: 0 0 0 60px;
   }
-
 
   .wrapper__nav_header_menu {
     display: block;
@@ -395,7 +404,7 @@
     gap: 15px;
     margin-top: 0;
   }
-  
+
   .header_menu_item {
     width: auto;
     font-weight: 700;
@@ -404,30 +413,22 @@
     padding: 0;
     background-color: transparent;
     border-radius: 0px;
-  
+
     &:active {
       background-color: $color-grey-separator;
     }
   }
-  
-  .header_menu_item_link {
-    color: $color-active-regular;
-  }
-  
 
   .header_menu_item_link {
-
     .is-main & {
-    color: white;
+      color: white;
     }
   }
-
-
 
   .header_menu_item_link:hover {
     color: $color-active-regular;
     border-bottom: 2px solid $color-active-regular;
-  
+
     .is-main & {
       color: white;
       border-bottom: 2px solid white;
@@ -441,20 +442,18 @@
   .header_burger {
     display: none;
   }
-  
 }
 
 @media screen and ($tablet_hd) {
-
   .header {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "logo lang"
       "logo nav";
 
     justify-content: space-between;
     align-items: center;
-    padding: 50px 60px; 
+    padding: 50px 60px;
   }
 
   .header_bread_crumbs__item {
@@ -471,11 +470,7 @@
     padding: 0;
   }
 
-  .header__block__nav_menu {
-    grid-area: nav;
-  }
-}
-
 .header_section__intro {
   text-align: center;
+}
 }

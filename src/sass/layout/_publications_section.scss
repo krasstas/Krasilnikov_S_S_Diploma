@@ -47,6 +47,11 @@
         &__title {
           color: $color-active-regular;
           margin-bottom: 15px;
+
+          &:hover {
+            color: $color-accent;
+            transition: 400ms;
+          }
         }
 
         &__date {
